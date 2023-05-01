@@ -1,3 +1,4 @@
+
 # if name is greater than or equal too 6: print
     # if correct, prints this and doesn't check rest
 
@@ -8,7 +9,7 @@
     # This is a dead branch
 
 # else: print 
-    # will print if name is 3 or less characters
+    # will print if name is 3 or less characters.
     
 name = input("What is your name? ")
 

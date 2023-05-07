@@ -1,4 +1,5 @@
 # 1) Write a `split_name` function that takes a string and returns a dictionary with first_name and last_name
+
 def split_name(name):
     first_name, last_name = name.split(maxsplit=1)
     return {
@@ -19,6 +20,7 @@ assert split_name("Victor Von Doom") == {
 }, f"Expected {{'first_name': 'Victor', 'last_name': 'Von Doom'}} but received {split_name('Victor Von Doom')}"
 
 # 3) Write an `is_palindrome` function to check if a string is a palindrome (reads the same from left-to-right and right-to-left)
+
 def is_palindrome(item):
     item = str(item)
     return item == item[::-1]
@@ -32,6 +34,7 @@ assert is_palindrome(101) == True, f"Expected True but got {is_palindrome(101)}"
 assert is_palindrome(10) == False, f"Expected False but got {is_palindrome(10)}"
 
 # 5) Write a `build_list` function that takes an item and a number to include in a list
+
 def build_list(item, count=1):
     items = []
     for _ in range(count):

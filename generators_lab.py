@@ -1,4 +1,5 @@
 # Define the `char_range` generator here
+
 def char_range(start, stop, step=1):
     stop_modifier = 1
     start_code = ord(start)
@@ -16,6 +17,7 @@ def char_range(start, stop, step=1):
 ##################################################
 
 # Ensure that `char_range` is a generator function
+
 from inspect import isgeneratorfunction
 
 assert isgeneratorfunction(
@@ -23,6 +25,7 @@ assert isgeneratorfunction(
 ), f"Expected char_range to be a generator function but was not."
 
 # Ensure that the result *does* includes the stop character
+
 assert list(char_range("a", "e")) == [
     "a",
     "b",
